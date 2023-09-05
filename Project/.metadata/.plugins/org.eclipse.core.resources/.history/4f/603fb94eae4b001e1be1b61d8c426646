@@ -1,0 +1,6 @@
+package ch03_pjt_01;
+
+public class MainClass {
+	TransportationWalk tw = new TransportationWalk();
+    tw.move();
+}
