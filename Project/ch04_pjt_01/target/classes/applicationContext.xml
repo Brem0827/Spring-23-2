@@ -182,13 +182,13 @@
 					<key>
 						<value>dev</value>
 					</key>
-					<ref bean="dev_DBConnectionInfoDev" />
+					<ref bean="dev_DBConnectionInfoDev" />	// 개발용 데이터베이스 지정
 				</entry>
 				<entry>
 					<key>
 						<value>real</value>
 					</key>
-					<ref bean="real_DBConnectionInfo" />
+					<ref bean="real_DBConnectionInfo" />	// 실제 서비스 데이터베이스 지정
 				</entry>
 			</map>
 		</property>
