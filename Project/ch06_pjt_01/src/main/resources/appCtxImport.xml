@@ -10,7 +10,7 @@
 
 	<!-- InitSampleData 빈 -->
 	<bean id="initSampleData"
-		class="ch04_pjt_01.ems.utils.InitSampleData">
+		class="ch06_pjt_01.ems.utils.InitSampleData">
 		<property name="sIds">
 			<array>
 				<value>hbs001</value>
@@ -70,45 +70,41 @@
 
 	<!-- StudentDao 빈 -->
 	<bean id="studentDao"
-		class="ch04_pjt_01.ems.dao.StudentDao" />
+		class="ch06_pjt_01.ems.dao.StudentDao" />
 
 	<!-- StudentRegisterService 빈 생성 -->
 	<bean id="studentRegisterService"
-		class="ch04_pjt_01.ems.service.StudentRegisterService">
+		class="ch06_pjt_01.ems.service.StudentRegisterService">
 		<constructor-arg ref="studentDao" />
 	</bean>
 
 	<!-- StudentModifyService 빈 생성 -->
 	<bean id="studentModifyService"
-		class="ch04_pjt_01.ems.service.StudentModifyService">
+		class="ch06_pjt_01.ems.service.StudentModifyService">
 		<constructor-arg ref="studentDao" />
 	</bean>
 
 	<!-- StudentDeleteService 빈 생성 -->
 	<bean id="studentDeleteService"
-		class="ch04_pjt_01.ems.service.StudentDeleteService">
+		class="ch06_pjt_01.ems.service.StudentDeleteService">
 		<constructor-arg ref="studentDao" />
 	</bean>
 
 	<!-- StudentSelectService 빈 생성 -->
 	<bean id="studentSelectService"
-		class="ch04_pjt_01.ems.service.StudentSelectService">
+		class="ch06_pjt_01.ems.service.StudentSelectService">
 		<constructor-arg ref="studentDao" />
 	</bean>
 
 	<!-- StudentAllSelectService 빈 생성 -->
 	<bean id="studentAllSelectService"
-		class="ch04_pjt_01.ems.service.StudentAllSelectService">
+		class="ch06_pjt_01.ems.service.StudentAllSelectService">
 		<constructor-arg ref="studentDao" />
 	</bean>
 
 	<!-- PrintStudentInformationService 빈 생성 -->
 	<bean id="printStudentInformationService"
-		class="ch04_pjt_01.ems.service.PrintStudentInformationService">
+		class="ch06_pjt_01.ems.service.PrintStudentInformationService">
 		<constructor-arg ref="studentAllSelectService" />
 	</bean>
-
-
-
-
 </beans> 

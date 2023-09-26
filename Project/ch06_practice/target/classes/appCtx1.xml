@@ -5,12 +5,9 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
     http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<import resource="classpath:appCtx2.xml" />
-	<import resource="classpath:appCtx3.xml" />
-
 	<!-- InitSampleData 빈 -->
 	<bean id="initSampleData"
-		class="ch06_pjt_01.ems.utils.InitSampleData">
+		class="ch04_pjt_03.ems.utils.InitSampleData">
 		<property name="sIds">
 			<array>
 				<value>hbs001</value>
@@ -66,45 +63,43 @@
 			</array>
 		</property>
 	</bean>
-
-
 	<!-- StudentDao 빈 -->
 	<bean id="studentDao"
-		class="ch06_pjt_01.ems.dao.StudentDao" />
+		class="ch04_pjt_03.ems.dao.StudentDao" />
 
 	<!-- StudentRegisterService 빈 생성 -->
 	<bean id="studentRegisterService"
-		class="ch06_pjt_01.ems.service.StudentRegisterService">
+		class="ch04_pjt_03.ems.service.StudentRegisterService">
 		<constructor-arg ref="studentDao" />
 	</bean>
 
 	<!-- StudentModifyService 빈 생성 -->
 	<bean id="studentModifyService"
-		class="ch06_pjt_01.ems.service.StudentModifyService">
+		class="ch04_pjt_03.ems.service.StudentModifyService">
 		<constructor-arg ref="studentDao" />
 	</bean>
 
 	<!-- StudentDeleteService 빈 생성 -->
 	<bean id="studentDeleteService"
-		class="ch06_pjt_01.ems.service.StudentDeleteService">
+		class="ch04_pjt_03.ems.service.StudentDeleteService">
 		<constructor-arg ref="studentDao" />
 	</bean>
 
 	<!-- StudentSelectService 빈 생성 -->
 	<bean id="studentSelectService"
-		class="ch06_pjt_01.ems.service.StudentSelectService">
+		class="ch04_pjt_03.ems.service.StudentSelectService">
 		<constructor-arg ref="studentDao" />
 	</bean>
 
 	<!-- StudentAllSelectService 빈 생성 -->
 	<bean id="studentAllSelectService"
-		class="ch06_pjt_01.ems.service.StudentAllSelectService">
+		class="ch04_pjt_03.ems.service.StudentAllSelectService">
 		<constructor-arg ref="studentDao" />
 	</bean>
 
 	<!-- PrintStudentInformationService 빈 생성 -->
 	<bean id="printStudentInformationService"
-		class="ch06_pjt_01.ems.service.PrintStudentInformationService">
+		class="ch04_pjt_03.ems.service.PrintStudentInformationService">
 		<constructor-arg ref="studentAllSelectService" />
 	</bean>
 </beans> 
