@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="classpath:appCtx2.xml" />
+	<import resource="classpath:appCtx3.xml" />
+
+	<!-- InitSampleData 빈 -->
+	<bean id="initSampleData"
+		class="ch06_pjt_01.ems.utils.InitSampleData">
+		<property name="sIds">
+			<array>
+				<value>hbs001</value>
+				<value>hbs002</value>
+				<value>hbs003</value>
+				<value>hbs004</value>
+				<value>hbs005</value>
+			</array>
+		</property>
+		<property name="sPws">
+			<array>
+				<value>bbs001</value>
+				<value>bbs002</value>
+				<value>bbs003</value>
+				<value>bbs004</value>
+				<value>bbs005</value>
+			</array>
+		</property>
+		<property name="sPhones">
+			<array>
+				<value>01000000001</value>
+				<value>01000000002</value>
+				<value>01000000003</value>
+				<value>01000000004</value>
+				<value>01000000005</value>
+			</array>
+		</property>
+		<property name="sMails">
+			<array>
+				<value>guswnd284@naver.com</value>
+				<value>guswnd284@naver.com</value>
+				<value>guswnd284@naver.com</value>
+				<value>guswnd284@naver.com</value>
+				<value>guswnd284@naver.com</value>
+			</array>
+		</property>
+		<property name="sDates">
+			<array>
+				<value>1972-11-21</value>
+				<value>1972-11-21</value>
+				<value>1972-11-21</value>
+				<value>1972-11-21</value>
+				<value>1972-11-21</value>
+			</array>
+		</property>
+		<property name="sLastUpdateDates">
+			<array>
+				<value>2023-09-12</value>
+				<value>2023-09-13</value>
+				<value>2023-09-14</value>
+				<value>2023-09-15</value>
+				<value>2023-09-16</value>
+			</array>
+		</property>
+	</bean>
+
+
+	<!-- StudentDao 빈 -->
+	<bean id="studentDao"
+		class="ch06_pjt_01.ems.dao.StudentDao" />
+
+	<!-- StudentRegisterService 빈 생성 -->
+	<bean id="studentRegisterService"
+		class="ch06_pjt_01.ems.service.StudentRegisterService">
+		<constructor-arg ref="studentDao" />
+	</bean>
+
+	<!-- StudentModifyService 빈 생성 -->
+	<bean id="studentModifyService"
+		class="ch06_pjt_01.ems.service.StudentModifyService">
+		<constructor-arg ref="studentDao" />
+	</bean>
+
+	<!-- StudentDeleteService 빈 생성 -->
+	<bean id="studentDeleteService"
+		class="ch06_pjt_01.ems.service.StudentDeleteService">
+		<constructor-arg ref="studentDao" />
+	</bean>
+
+	<!-- StudentSelectService 빈 생성 -->
+	<bean id="studentSelectService"
+		class="ch06_pjt_01.ems.service.StudentSelectService">
+		<constructor-arg ref="studentDao" />
+	</bean>
+
+	<!-- StudentAllSelectService 빈 생성 -->
+	<bean id="studentAllSelectService"
+		class="ch06_pjt_01.ems.service.StudentAllSelectService">
+		<constructor-arg ref="studentDao" />
+	</bean>
+
+	<!-- PrintStudentInformationService 빈 생성 -->
+	<bean id="printStudentInformationService"
+		class="ch06_pjt_01.ems.service.PrintStudentInformationService">
+		<constructor-arg ref="studentAllSelectService" />
+	</bean>
+</beans> 
