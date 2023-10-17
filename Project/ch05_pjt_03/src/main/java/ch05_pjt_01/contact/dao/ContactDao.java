@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Map;
 
 import ch05_pjt_01.contact.ContactSet;
-import spring5.MemberSet;
 
 public class ContactDao {
 
