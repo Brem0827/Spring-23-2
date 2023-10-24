@@ -31,4 +31,5 @@ public class MemberService {
 		return signInedMember;
 		
 	}
+	
 }
