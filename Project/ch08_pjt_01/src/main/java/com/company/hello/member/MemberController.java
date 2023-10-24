@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class MemberController {
 	
+	MemberService memberService = new MemberService();
+	
 	@RequestMapping("/signUp")
 	public String singUp() {
 		return "sign_Up";
@@ -26,7 +28,9 @@ public class MemberController {
 		System.out.println("m_mail: " + memberVo.getM_mail());
 		System.out.println("m_phone: " + memberVo.getM_phone());
 		
-		return null;
+		memberService.signUpConfirm(memberVo);
+		
+		return "sign_up_ok";
 		
 	}
 	
