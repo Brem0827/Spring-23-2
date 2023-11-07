@@ -26,15 +26,15 @@
 		
 			<div class="word">
 			
-				<h3>LOGIN FAIL!!</h3>
+				<h3>로그인 실패!!</h3>
 				<span>(만약 관리자 회원가입을 했다면, 최고 관리자(super admin)한테 승인 요청 후 로그인하세요.)</span>
 				
 			</div>
 			
 			<div class="others">
 				
-				<a href="<c:url value='/admin/member/createAccountForm' />">create account</a>
-				<a href="<c:url value='/admin/member/loginForm' />">login</a>
+				<a href="<c:url value='/admin/member/createAccountForm' />">계정 생성</a>
+				<a href="<c:url value='/admin/member/loginForm' />">로그인</a>
 				
 			</div>
 		

@@ -24,7 +24,7 @@
 		
 			<div class="word">
 			
-				<h3>ADMIN HOME</h3>
+				<h3>관리자 메인 화면</h3>
 				
 			</div>
 			

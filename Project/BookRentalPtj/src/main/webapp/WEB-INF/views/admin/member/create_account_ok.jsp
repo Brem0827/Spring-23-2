@@ -24,7 +24,7 @@
 		
 			<div class="word">
 			
-				<h3>CREATE ACCOUNT SUCCESS!!</h3>
+				<h3>계정 생성 완료</h3>
 				
 			</div>
 			

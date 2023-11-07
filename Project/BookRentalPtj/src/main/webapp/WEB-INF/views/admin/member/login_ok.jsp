@@ -26,14 +26,14 @@
 		
 			<div class="word">
 			
-				<h3>LOGIN SUCCESS!!</h3>
+				<h3>로그인 성공!!</h3>
 				
 			</div>
 			
 			<div class="others">
 				
-				<a href="<c:url value='/admin/member/logoutConfirm' />">logout</a>
-				<a href="<c:url value='/admin/member/modifyAccountForm' />">modify account</a>
+				<a href="<c:url value='/admin/member/logoutConfirm' />">로그아웃</a>
+				<a href="<c:url value='/admin/member/modifyAccountForm' />">계정 수정</a>
 				
 			</div>
 		

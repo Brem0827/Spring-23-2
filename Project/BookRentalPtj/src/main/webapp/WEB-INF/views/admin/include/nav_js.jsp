@@ -9,7 +9,7 @@
 		let form = document.search_book_form;
 		
 		if (form.b_name.value == '') {
-			alert('Enter the name of the book you are looking for.');
+			alert('찾으려는 책의 이름을 입력 해 주세요');
 			form.b_name.focus();
 			
 		} else {

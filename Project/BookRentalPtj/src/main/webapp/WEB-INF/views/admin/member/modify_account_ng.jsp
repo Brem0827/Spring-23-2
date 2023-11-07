@@ -24,7 +24,7 @@
 		
 			<div class="word">
 			
-				<h3>MODIFY ACCOUNT FAIL!!</h3>
+				<h3>계정 수정 실패!!</h3>
 				
 			</div>
 		

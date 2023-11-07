@@ -24,7 +24,7 @@
 		
 			<div class="word">
 			
-				<h3>MODIFY ACCOUNT SUCCESS!!</h3>
+				<h3>계정 수정 성공!!</h3>
 				
 			</div>
 		

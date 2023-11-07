@@ -26,7 +26,7 @@
 			
 			<div class="word">
 			
-				<h3>LOGIN FORM</h3>
+				<h3>로그인</h3>
 				
 			</div>
 			
@@ -34,10 +34,10 @@
 			
 				<form action="<c:url value='/admin/member/loginConfirm' />" name="login_form" method="post">
 					
-					<input type="text"		name="a_m_id" 		placeholder="INPUT ADMIN ID."> <br>
-					<input type="password"	name="a_m_pw" 		placeholder="INPUT ADMIN PW."> <br>
-					<input type="button"	value="login" onclick="loginForm();"> 
-					<input type="reset"		value="reset">
+					<input type="text"		name="a_m_id" 		placeholder="관리자 아이디를 입력해주세요"> <br>
+					<input type="password"	name="a_m_pw" 		placeholder="관리자 비밀번호를 입력해주세요"> <br>
+					<input type="button"	value="로그인" onclick="loginForm();"> 
+					<input type="reset"		value="초기화">
 					
 				</form>
 				
@@ -45,8 +45,8 @@
 			
 			<div class="find_password_create_account">
 				
-				<a href="<c:url value='/admin/member/findePasswordForm' />">find password</a>
-				<a href="<c:url value='/admin/member/createAccountForm' />">create account</a>
+				<a href="<c:url value='/admin/member/findePasswordForm' />">비밀번호 찾기</a>
+				<a href="<c:url value='/admin/member/createAccountForm' />">계정 생성</a>
 				
 			</div>
 		

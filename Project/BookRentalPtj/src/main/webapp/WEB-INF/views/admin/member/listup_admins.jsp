@@ -24,7 +24,7 @@
 			
 			<div class="word">
 			
-				<h3>ADMIN LIST</h3>
+				<h3>관리자 목록</h3>
 				
 			</div>
 			
