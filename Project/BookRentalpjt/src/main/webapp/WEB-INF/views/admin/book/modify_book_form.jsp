@@ -26,7 +26,7 @@
 		
 			<div class="word">
 			
-				<h3>MODIFY BOOK FORM</h3>
+				<h3>도서 수정 페이지</h3>
 				
 			</div>
 		
@@ -36,20 +36,20 @@
 					
 					<input type="hidden" name="b_no" value="${bookVo.b_no}">
 					
-					<input type="text" name="b_name" value="${bookVo.b_name}" placeholder="INPUT BOOK NAME."> <br>
-					<input type="text" name="b_author" value="${bookVo.b_author}" placeholder="INPUT BOOK AUTHOR."> <br>
-					<input type="text" name="b_publisher" value="${bookVo.b_publisher}" placeholder="INPUT BOOK PUBLISHER."> <br>
-					<input type="text" name="b_publish_year" value="${bookVo.b_publish_year}" placeholder="INPUT BOOK PUBLISH YEAR."> <br>
-					<input type="text" name="b_isbn" value="${bookVo.b_isbn}" placeholder="INPUT BOOK ISBN."> <br>
-					<input type="text" name="b_call_number" value="${bookVo.b_call_number}" placeholder="INPUT BOOK CALL NUMBER."> <br>
+					<input type="text" name="b_name" value="${bookVo.b_name}" placeholder="책 이름을 입력해주세요"> <br>
+					<input type="text" name="b_author" value="${bookVo.b_author}" placeholder="저자 이름을 입력해주세요"> <br>
+					<input type="text" name="b_publisher" value="${bookVo.b_publisher}" placeholder="출판사의 이름을 입력해주세요"> <br>
+					<input type="text" name="b_publish_year" value="${bookVo.b_publish_year}" placeholder="출판년도를 입력해주세요"> <br>
+					<input type="text" name="b_isbn" value="${bookVo.b_isbn}" placeholder="책의 고유번호를 입력해주세요"> <br>
+					<input type="text" name="b_call_number" value="${bookVo.b_call_number}" placeholder="책의 도서 정리번호를 입력해주세요"> <br>
 					<select name="b_rantal_able">
-						<option value="">SELECT BOOK RANTAL ABLE.</option>
-						<option value="0" <c:if test="${bookVo.b_rantal_able eq '0'}"> selected </c:if>>UNABLE.</option>
-						<option value="1" <c:if test="${bookVo.b_rantal_able eq '1'}"> selected </c:if>>ABLE.</option>
+						<option value="">도서 대출 가능 여부</option>
+						<option value="0" <c:if test="${bookVo.b_rantal_able eq '0'}"> selected </c:if>>불가능</option>
+						<option value="1" <c:if test="${bookVo.b_rantal_able eq '1'}"> selected </c:if>>가능</option>
 					</select><br>
 					<input type="file"		name="file"><br>
-					<input type="button"	value="modify book" onclick="modifyBookForm();"> 
-					<input type="reset"		value="reset">
+					<input type="button"	value="수정 완료" onclick="modifyBookForm();"> 
+					<input type="reset"		value="초기화">
 					
 				</form>
 				
